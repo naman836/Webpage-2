@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Recruitment Solution</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Homepage -->
+  <header class="header">
+    <h1>Welcome to our Online Recruitment Solution</h1><br>
+    <p>Efficiently find and hire top talent</p><br>
+    <a href="login.html" class="button">Get Started</a>
+  </header>
+
+  <!-- User Login Page -->
+  <section class="login-section">
+    <h2>Login to your Account</h2>
+    <form>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="register.html">Register here</a></p>
+  </section>
+
+  <!-- User Register Page -->
+  <section class="register-section">
+    <h2>Create an Account</h2>
+    <form>
+      <input type="text" placeholder="Company Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+  </section>
+
+  <!-- Candidate Search Page -->
+  <section class="search-section">
+    <h2>Find Candidates</h2>
+    <form>
+      <input type="text" placeholder="Location">
+      <select>
+        <option value="" disabled selected>Select Job Role</option>
+        <option value="role1">Job Role 1</option>
+        <option value="role2">Job Role 2</option>
+        <option value="role3">Job Role 3</option>
+      </select>
+      <button type="submit">Search</button>
+    </form>
+    <div class="candidates-list">
+      <!-- Fetched candidates will be displayed here -->
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
